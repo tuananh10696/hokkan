@@ -109,10 +109,10 @@ class ItemsController extends AppController
         ));
     }
 
-    public function edit($id = 0)
+    public function editItem($id = 0)
     {
 
-        $this->checkLogin();
+    $this->checkLogin();
 
         if ($this->request->getData('postMode') == 'preview') {
             return $this->preview($id);
