@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <!--#include virtual="/assets/include/ga.html" -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="format-detection" content="telephone=no">
+    <title>お問い合わせ | 蔵の街とちぎの酒『北冠』 | 北関酒造</title>
+    <meta name="Description" content="栃木県栃木市の日本酒の酒蔵「北関酒造」のWEBサイト。毎日飲んでも飽きないお酒造りにこだわっています。">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="栃木県栃木市の日本酒の酒蔵「北関酒造」のWEBサイト。毎日飲んでも飽きないお酒造りにこだわっています。">
+    <meta property="og:title" content="お問い合わせ | 蔵の街とちぎの酒『北冠』 | 北関酒造">
+    <meta property="og:url" content="https://www.hokkansyuzou.co.jp/">
+    <meta property="og:image" content="https://www.hokkansyuzou.co.jp/og.png">
+    <meta property="og:locale" content="ja_JP">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:description" content="栃木県栃木市の日本酒の酒蔵「北関酒造」のWEBサイト。毎日飲んでも飽きないお酒造りにこだわっています。">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;500;600;700&amp;display=swap">
+    <link rel="stylesheet" href="/assets/css/common.css">
+    <link rel="stylesheet" href="/assets/css/contact.css">
+
+    <script>
+      var bodyWidth = (document.body && document.body.clientWidth) || 0; document.documentElement.style.setProperty('--vw', (bodyWidth / 100) + 'px'); document.documentElement.style.setProperty('--vh', (window.innerHeight / 100) + 'px');
+      
+    </script>
+  </head>
+  <body>
+    <div class="root" id="root">
+
+      <!--#include virtual="/assets/include/header.html" -->
+
+      <main>
+        <div class="b-contact">
+          <div class="b-frm">
+            <div class="row">
+              <h2 class="ttl_01">お問い合わせ</h2>
+              <p class="txt__top">
+                下記の入力フォームに必要事項をご入力の上、
+                 [入力内容を確認する] ボタンを
+                クリックしてください。<br><span class="req">必須</span>はご入力必須項目です。
+              </p>
+              <form class="frm" action="/contact/confirm.html" method="POST"> 
+                <div class="frm__group">
+                  <div class="frm__lbl">お問い合わせ種別<span class="req">必須</span></div>
+                  <div class="frm__box"> 
+                    <ul class="frm__radio"> 
+                      <li> 
+                        <label>
+                          <input class="frm__radio" type="radio" name="inquiry" value="1" checked><span class="rdo__lbl">採用</span>
+                        </label>
+                      </li>
+                      <li> 
+                        <label>
+                          <input class="frm__radio" type="radio" name="inquiry" value="2"><span class="rdo__lbl">商品・その他</span>
+                        </label>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="frm__group">
+                  <div class="frm__lbl">お名前<span class="req">必須</span></div>
+                  <div class="frm__box">
+                    <input class="frm__control" type="text">
+                  </div>
+                </div>
+                <div class="frm__group">
+                  <div class="frm__lbl">フリガナ<span class="req">必須</span></div>
+                  <div class="frm__box">
+                    <input class="frm__control" type="text">
+                  </div>
+                </div>
+                <div class="frm__group">
+                  <div class="frm__lbl">電話番号<span class="req">必須</span></div>
+                  <div class="frm__box">
+                    <input class="frm__control" type="text">
+                  </div>
+                </div>
+                <div class="frm__group">
+                  <div class="frm__lbl">E-mail<span class="req">必須</span></div>
+                  <div class="frm__box">
+                    <input class="frm__control" type="text">
+                  </div>
+                </div>
+                <div class="frm__group">
+                  <div class="frm__lbl">お問い合わせ内容<span class="req">必須</span></div>
+                  <div class="frm__box">
+                    <textarea class="frm__textarea"></textarea>
+                  </div>
+                </div>
+                <div class="frm__privacy">
+                  <div class="frm__checkbox">
+                    <input type="checkbox" name="privacy" id="privacy">
+                    <label for="privacy"><a href="/privacy/">プライバシーポリシー</a>に同意する</label>
+                  </div>
+                  <p class="txt_privacy">[入力内容を確認する] ボタンをクリックして入力内容のご確認をお願いします。<br>ご入力、誠にありがとうございました。</p>
+                </div>
+                <div class="frm__btn">
+                  <button class="btn__submit" type="submit">入力内容を確認する</button>
+                  <button class="btn__reset" type="reset"><span>入力内容をリセットする</span></button>
+                </div>
+              </form>
+            </div>
+          </div>
+                  <div class="breadcrumb">
+                    <div class="row">
+                      <ul class="breadcrumb_lst">
+                        <li><a href="/">トップ</a></li>
+                        <li>お問い合わせ</li>
+                      </ul>
+                    </div>
+                  </div>
+        </div>
+      </main>
+
+      <!--#include virtual="/assets/include/footer.html" -->
+
+    </div>
+    <script src="/assets/js/vendor.js" defer></script>
+    <script src="/assets/js/runtime.js" defer></script>
+    <script src="/assets/js/bundle.js" defer></script>
+  </body>
+</html>
