@@ -48,7 +48,7 @@
                         <ul>
                             <li class="show_pc header__nav__item"><a href="/">トップ</a></li>
                             <li class="header__nav__item"><a href="/info/">新着情報</a></li>
-                            <li class="header__nav__item"><a href="/item/">商品紹介</a></li>
+                            <li class="header__nav__item"><a href="/items/">商品紹介</a></li>
                             <li class="header__nav__item"><a href="/company/">企業情報</a></li>
                             <li class="header__nav__item"><a href="/recruit/">採用情報</a></li>
                             <li class="show_sp o-long header__nav__item"><a href="/privacy/">プライバシーポリシー</a></li>
