@@ -21,13 +21,14 @@ $count['total'] = $data_query->count();
 
 <?= $this->element('error_message'); ?>
 
+
 <div class="content_inr">
 
     <div class="box">
         <h3 style="margin-bottom:20px;">オプション</h3>
         <div class="btn_area" style="text-align:left;margin-left: 20px;margin-bottom: 10px !important;">
             <a href="/user/Items/ListCategory" class="btn_send btn_search" style="width:130px;text-align:center;">カテゴリ一覧</a>
-            <a href="<?= $this->Url->build(array('action' => 'edit', '?' => ['sch_page_id' => $sch_page_id, 'sch_category_id' => $sch_category_id])); ?>" class="btn_send btn_search">新規登録</a>
+            <a href="<?= $this->Url->build(array('action' => 'editItem', '?' => ['sch_page_id' => $sch_page_id, 'sch_category_id' => $sch_category_id])); ?>" class="btn_send btn_search">新規登録</a>
         </div>
     </div>
 
@@ -117,20 +118,20 @@ $count['total'] = $data_query->count();
                         </td>
 
                         <td>
-
+                            <?= $this->Html->link(($data->category->name), ['action' => 'editCategory', $data->id]); ?>
                         </td>
 
                         <td>
-                            <?php if ($this->Common->isCategoryEnabled($page_config)) : ?>
-                                <?= $this->Html->view((!empty($data->category->name) ? $data->category->name : '未設定'), ['before' => '【', 'after' => '】<br>']); ?>
-                            <?php endif; ?>
-                            <?= $this->Html->link(h($data->title), ['action' => 'edit', $data->id, '?' => $query], ['escape' => false, 'class' => 'btn btn-light w-100 text-left']) ?>
+                            <?= $this->Html->link(h($data->title), ['action' => 'editItem', $data->id, '?' => $query], ['escape' => false, 'class' => 'btn btn-light w-100 text-left']) ?>
                         </td>
 
                         <td>
+                            <?php
+                            $photo =  !empty($data->image) ? '/upload/infos/images/'.$data->image : '/upload/infos/web_data/150.png';
 
+                            ?>
+                            <?= $this->Html->image($photo,['height' => 100, 'width' => 100]) ?>
                         </td>
-
                         <td>
                             <div class="prev"><a href="<?= $preview_url ?>" target="_blank">プレビュー</a></div>
                         </td>
@@ -166,7 +167,7 @@ $count['total'] = $data_query->count();
 
         </div>
 
-        <div class="btn_area" style="margin-top:10px;"><a href="<?= $this->Url->build(array('action' => 'edit', '?' => ['sch_page_id' => $sch_page_id, 'sch_category_id' => $sch_category_id])); ?>" class="btn_confirm btn_post">新規登録</a></div>
+        <div class="btn_area" style="margin-top:10px;"><a href="<?= $this->Url->build(array('action' => 'editItem', '?' => ['sch_page_id' => $sch_page_id, 'sch_category_id' => $sch_category_id])); ?>" class="btn_confirm btn_post">新規登録</a></div>
 
         <?= $this->element('pagination') ?>
     </div>

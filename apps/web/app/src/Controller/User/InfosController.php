@@ -112,7 +112,9 @@ class InfosController extends AppController
             'limit' => 20,
             'contain' => $contain
         ));
+        
     }
+
     protected function _getQueryIndex()
     {
         return $this->_getQuery();
